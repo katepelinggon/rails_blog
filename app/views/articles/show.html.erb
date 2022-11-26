@@ -1,0 +1,32 @@
+# # <%= form_with scope: :article, url: show_article_path, local: true do |f| %>
+
+# <table>
+#     <thead>
+#         <tr>
+#             <th>ID</th>
+#             <th>Name</th>
+#             <th>Body</th>
+#         </tr>
+#     </thead>
+
+#     <tbody>
+#         <% @articles.each do |article| %>
+#             <tr>
+#                 <td><%= article.id %> </td>
+#                 <td><%= article.name %> </td>
+#                 <td><%= article.body %> </td>
+#                 <td><%= link_to 'Show', show_article_path(article.id) %></td>
+#                 <td><%= link_to 'Edit', edit_article_path(article.id) %></td>
+#                 <td><%= button_to "Delete", delete_article_path(article), method: :delete %></td>
+#             <tr>
+#         <% end %>
+#     </tbody>
+# </table>
+
+
+# <div>
+#   <%= link_to "Edit article", edit_article_path(article.id) %> |
+#   <%= link_to "Back to articles", article_path %>
+
+#   <%= button_to "Delete article", delete_article_path(article), method: :delete %>
+# </div>
