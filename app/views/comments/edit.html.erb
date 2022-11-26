@@ -1,4 +1,4 @@
-<%= form_with scope: :comment, url: update_comment_path, local: true, method: :put do |f| %>
+<%= form_with scope: :comment, url: article_comment_path, local: true, method: :put do |f| %>
 
     <p>
         <% if @comment.errors.any? %>

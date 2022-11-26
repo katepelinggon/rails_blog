@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
         @comment = @article.comments.find(params[:id])
 
         if @comment.update(comment_params)
-            redirect_to comments_path
+            redirect_to article_comments_path
         else
             render :edit
         end
